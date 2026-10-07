@@ -1,4 +1,5 @@
-# 💻 Programming for AI — Lab Repository
+# 🎓 Student Lab Portfolio — BCA AI (2026 Batch)
+
 **Student Name:** YASHVI  
 **Roll Number:** `2610997694`  
 **Section:** Section G  
@@ -13,52 +14,68 @@ When you start for the first time, open your terminal (Command Prompt, PowerShel
 
 ```bash
 git clone https://github.com/chitkara-bca-ai-2026/sec-g-2610997694-yashvi.git
-cd sec-g-2610997694-yashvi
 ```
+*(After cloning, open the cloned folder in VS Code via **File → Open Folder**)*
 
 ---
 
-## 📂 Folder Structure
+## 📂 Repository Structure
 
-Maintain a **separate folder for each individual lab**:
+This repository is your central coursework portfolio across lab courses. Keep your work organized inside their respective subject folders:
+
+* **`Python/`** — Python Programming lab assignments and solutions.
+* **`CST/`** — Client Side Technology (HTML, CSS, JS) lab exercises.
 
 ```text
 sec-g-2610997694-yashvi/
 ├── README.md
 │
-├── Lab_01/                                <--- [Previous Lab Example]
-│   └── solution.py                        (Only solution.py needed, no log required)
-├── Lab_02/
-│   └── solution.py
-...
-├── Lab_13/                                <--- [Upcoming Lab Example]
-│   ├── solution.py                        (Your Python program)
-│   └── log.txt                            (Your thoughts & error log)
-└── Lab_14/
-    ├── solution.py
-    └── log.txt
+├── Python/                                  <--- [Python Programming]
+│   ├── Lab_01/
+│   │   └── solution.py                      (No log needed for past labs)
+│   ├── ...
+│   ├── Lab_13/
+│   │   ├── solution.py                      (Python program)
+│   │   └── log.txt                          (Error & reflection log - Python only)
+│   └── Lab_14/
+│       ├── solution.py
+│       └── log.txt
+│
+└── CST/                                     <--- [Client Side Technologies]
+    ├── Lab_01/
+    │   ├── html/
+    │   │   └── index.html                   (HTML files inside html/)
+    │   └── images/
+    │       └── banner.png                   (Images inside images/)
+    └── Lab_02/
+        ├── html/
+        │   └── index.html
+        └── images/
+            └── logo.png
 ```
 
 ---
 
-## 📝 Learning & Error Log (`log.txt`) — For Lab 13 Onwards
+## 📝 Learning & Error Log (`log.txt`) — Python Labs Only (Lab 13 Onwards)
 
-For upcoming labs (starting from Lab 13), create a simple Notepad text file named **`log.txt`** in that lab's folder.
+> ⚠️ **Note:** `log.txt` is strictly required for **Python** labs starting from Lab 13. Your **CST** labs do **not** require a `log.txt` (unless your CST teacher asks for one).
 
-> 💬 **Tip:** Write casually in plain words just like you chat or take rough notes—no formal language needed! Just your honest thoughts, what went wrong, and how you fixed it. You can record one or multiple errors.
+For each Python lab (starting Lab 13), create a simple Notepad text file named **`log.txt`** inside that lab's folder (`Python/Lab_XX/log.txt`).
+
+Write casually in plain words just like rough notes—record your honest thoughts, any syntax/logic bugs you encountered, and how you solved them:
 
 ### Example `log.txt`:
 ```text
 Lab Reflection:
 
 1. Approach:
-Used a while loop to keep taking input numbers until the user entered 0, and a for loop to calculate the sum.
+Used a while loop to take input numbers until user entered 0, and a for loop to calculate the sum.
 
 2. Errors Faced:
 - Error 1: Infinite loop! Program kept running and didn't stop.
   Fix: Realized I forgot to increment the counter `i += 1` inside the while loop.
 - Error 2: IndentationError: expected an indented block.
-  Fix: Corrected the 4-space tab indentation inside the loop body.
+  Fix: Corrected 4-space tab indentation inside the loop body.
 
 3. Output:
 Tested with inputs 5, 10, 15, 0. Output printed: "Total Sum = 30".
@@ -76,7 +93,7 @@ Whenever you add or update your code:
 git add .
 
 # 2. Commit your work
-git commit -m "Add Lab 13 solution and log.txt"
+git commit -m "Add Python Lab 13 solution and log"
 
 # 3. Push to your repository
 git push origin main
